@@ -1261,7 +1261,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #08bf5c;
+  background: #ff5298;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2405,79 +2405,23 @@ embed {
   transform: translate(-50%, -50%);
   font-size: 40px;
 }
-/*---------這如果布景本身沒有在加就好---------*/
-body {
-  padding: 0;
-  margin: 0;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/*---------這如果布景本身沒有在加就好 end---------*/
-.bob-container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.bob-row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.bob-row:before,
-.bob-row:after {
-  display: table;
-  content: " ";
-}
-.bob-row:after {
-  clear: both;
-}
-/*2個並排 不管在任何尺寸都會2個並排*/
-.bob-2item {
-  width: 50%;
-}
-/*3個並排 在767px以下會垂直排列*/
-.bob-3item {
-  width: 100%;
-}
-/*4個並排 在767px以下會2個排列*/
-.bob-4item {
-  width: 50%;
-}
-.bob-2item,
-.bob-3item,
-.bob-4item {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+.column2 {
   float: left;
+  width: 50%;
+  padding: 0px;
 }
-.bob-2item img,
-.bob-3item img,
-.bob-4item img {
-  width: 100%;
-  display: block;
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-@media (min-width: 768px) {
-  .bob-container {
-    width: 750px;
-  }
-  .bob-3item {
-    width: 33.33333333%;
-  }
-  .bob-4item {
-    width: 25%;
-  }
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
 }
-@media (min-width: 992px) {
-  .bob-container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .bob-container {
-    width: 1170px;
-  }
+.row3::after {
+  content: "";
+  clear: both;
+  display: table;
 }
