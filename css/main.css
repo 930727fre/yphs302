@@ -1233,7 +1233,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6a4b7a;
+  background: #d27fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2408,8 +2408,8 @@ embed {
   justify-content: center;
 }
 .typing-demo {
-  width: 40ch;
-  animation: typing 2s steps(40), blink 0.5s step-end infinite alternate;
+  width: 45ch;
+  animation: typing 2s steps(45), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
