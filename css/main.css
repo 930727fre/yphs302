@@ -1233,7 +1233,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #570e82;
+  background: #79f0ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2365,6 +2365,9 @@ embed {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+p {
+  color: #000;
+}
 .grid-wrappera > div {
   display: flex;
   justify-content: center;
@@ -2443,6 +2446,7 @@ embed {
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  color: #000;
 }
 /* block-$ */
 .block-effect {
