@@ -18,6 +18,34 @@
   --btn-default-hover-color: #222;
   --btn-default-hover-border-color: #222;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #282828;
+    --content-bg-color: #333;
+    --card-bg-color: #555;
+    --text-color: #ccc;
+    --blockquote-color: #bbb;
+    --link-color: #ccc;
+    --link-hover-color: #eee;
+    --brand-color: #ddd;
+    --brand-hover-color: #ddd;
+    --table-row-odd-bg-color: #282828;
+    --table-row-hover-bg-color: #363636;
+    --menu-item-bg-color: #555;
+    --btn-default-bg: #222;
+    --btn-default-color: #ccc;
+    --btn-default-border-color: #555;
+    --btn-default-hover-bg: #666;
+    --btn-default-hover-color: #ccc;
+    --btn-default-hover-border-color: #666;
+  }
+  img {
+    opacity: 0.75;
+  }
+  img:hover {
+    opacity: 0.9;
+  }
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -1233,7 +1261,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #79f0ff;
+  background: #bb4d5e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2365,9 +2393,6 @@ embed {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-p {
-  color: #000;
-}
 .grid-wrappera > div {
   display: flex;
   justify-content: center;
@@ -2446,7 +2471,6 @@ p {
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
-  color: #000;
 }
 /* block-$ */
 .block-effect {
@@ -2547,22 +2571,22 @@ p {
 }
 @-moz-keyframes revealBlock {
   100% {
-    color: #0f0f0f;
+    color: #fff;
   }
 }
 @-webkit-keyframes revealBlock {
   100% {
-    color: #0f0f0f;
+    color: #fff;
   }
 }
 @-o-keyframes revealBlock {
   100% {
-    color: #0f0f0f;
+    color: #fff;
   }
 }
 @keyframes revealBlock {
   100% {
-    color: #0f0f0f;
+    color: #fff;
   }
 }
 @-moz-keyframes revealingIn {
